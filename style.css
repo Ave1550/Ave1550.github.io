@@ -1,0 +1,35 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid darkblue;
+}
+
+p {
+    color: darkgreen;
+    font-size: 18px;
+ }
+
+ img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    border: 3px solid navy;
+  }
+
+  ul {
+    background-color: green;
+    padding: 10px 30px;
+    width: 200px;
+    margin: auto;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
