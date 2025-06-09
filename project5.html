@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe - About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Turtle Project</h1>
+    </header>
+
+    <!-- Project Description -->
+    <section>
+        <h2>About the Project</h2>
+        <p>This project is about creating a graphical scene using Python’s Turtle graphics
+module.I used the provided building block functions (draw_rectangle, draw_square,
+draw_triangle, draw_circle, draw_polygon, draw_curve, etc.) to create functions that 
+draw composite shapes such as a house, flowers, trees, etc. I refactored it by creating helper functions for different parts of the scene. Instead of writing all the drawing steps inside one big function, I split the tasks into smaller functions like draw_house, draw_sun, and draw_cloud. Each of these functions calls the basic shape-drawing functions, so the code is less repetitive and easier to understand.
+</p>
+    </section>
+
+    <!-- Code highlights -->
+    <section>
+        <h2>Sample Code</h2>
+        <p>
+            This function creates a house using rectangles and other shapes.
+            <br><br>
+        </p>
+        
+        <div class="code-container">
+            def draw_house(t, x, y, width, height):
+    # House body
+    jump_to(t, x, y)
+    draw_rectangle(t, width, height, 'red')
+    # Roof
+    jump_to(t, x - 10, y - 10)
+    draw_triangle(t, width + 20, 'brown')
+    # Door
+    door_width, door_height = 20, 40
+    jump_to(t, x + width//2 - door_width//2, y - height + door_height)
+    draw_rectangle(t, door_width, door_height, 'yellow')
+    </section>
+        
+    <!-- the scene -->
+    <section>
+        <h2>Final Scene</h2>
+        <p>Here's the completed turtle graphics scene featuring a house, fluffy clouds, a bright sun.</p>
+        
+        <div class="scene-container">
+            <img src="House.png" alt="Turtle Graphics Scene - A house with red roof, colorful flowers, clouds, sun, and pine tree on a blue sky background" class="scene-image">
+        </div>
+        
+        <p class="scene-description">
+            The scene combines multiple composite shapes created from basic turtle graphics functions. The house uses rectangles and triangles. The clouds demonstrate the layering technique shown in the 
+            code sample above, and the overall composition creates a cheerful, pastoral scene.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jane Doe | background images from: <a href="https://eskipaper.com/">https://eskipaper.com/</a></p>
+    </footer>
+</body>
+</html>
